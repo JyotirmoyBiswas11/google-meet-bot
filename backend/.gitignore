@@ -1,0 +1,15 @@
+# Ignore token.json file
+token.json
+
+# Ignore all .env files
+*.env
+
+# Ignore env directory
+env
+test.py
+newtest.py
+authtest.py
+drivelist.py
+flak_test.py
+mailtest.py
+meet-bot-backend.pem

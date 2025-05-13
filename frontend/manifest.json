@@ -1,0 +1,28 @@
+{
+    "name": "AI-Note-Taking Add-on",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "A simple note-taking add-on for Google Meet using ai.",
+    "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "permissions": [
+      "https://www.googleapis.com/",
+      "https://meet.google.com/"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://meet.google.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      "icons/*"
+    ]
+  }
+  
